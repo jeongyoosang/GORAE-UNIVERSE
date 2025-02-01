@@ -1,0 +1,43 @@
+a {
+    color:black; text-decoration: none;
+}
+.current-page {
+    color: purple; /* 현재 보고 있는 페이지는 보라색 */
+    text-decoration: underline;
+}
+h1 {
+    font-size: 50px;
+    border-bottom : 3px solid darkblue;
+    padding: 30px;
+    margin-bottom: 0;
+}
+body{
+    text-align: center;
+    margin : 0;
+}
+ul{
+    text-align: left;
+    
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol{
+    border-right: solid 3px darkblue;
+    width: 130px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 20px;
+}
+#grid #article {
+    padding: 50px;
+}
+@media(max-width:830px){
+    #grid{
+        display:block;
+    }
+    #grid ol {
+        border-right: none;
+    }
+}
