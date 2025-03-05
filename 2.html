@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<haed>
+<head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-25EV2VEVSX"></script>
 <script>
@@ -13,9 +13,32 @@
 <link rel="stylesheet"  href="style.css">
     <title>GORAE UNIVERSE</title>
     <meta charset="utf-8">
-</haed>
+</head>
 <body>
-    <h1><a href="index.html">GORAE UNIVERSE <img src="회사CI.png" width="80"></a></h1>
+    <h1><a href="index.html">GORAE UNIVERSE <img src="회사CI.png" width="80"></a>
+        <div style="text-align: right;">
+            <input type="button" value="night" onclick="
+                var target = document.querySelector('body');
+                if(this.value === 'night'){
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                document.querySelector('h1').style.color = 'white';
+                document.querySelector('ol').style.color = 'white';
+                document.querySelectorAll('a').forEach(el => el.style.color = 'white')
+                this.value = 'day';
+                }
+                else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                document.querySelector('h1').style.color = 'black';
+                document.querySelector('ol').style.color = 'black';
+                document.querySelectorAll('a').forEach(el => el.style.color = 'black');
+                this.value = 'night';
+                }
+                ">
+        </div>
+      
+    </h1>
      <div id="grid">   
       <ol>
           <li><a href="1.html" title="ZAMVOKI">잠보기</a></li>

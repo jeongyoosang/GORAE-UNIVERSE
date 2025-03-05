@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        
+        <h1>Loop & array</h1>
+        <!-- 원래 이렇게 해야되는 거를
+        <h2> Co workers </h2>
+         <ul>
+            <li>Jeong GORAE</li>
+            <li>Kim GORAE</li>
+            <li>Hee GORAE</li>
+            <li>LEE GORAE</li>
+            <li>Ji GORAE</li>
+         </ul>
+         -->
+        <script>
+            var coworkers = ['Jeong', 'Kim','Hee','Lee','Ji'];
+        </script>
+        <h2>Co workders</h2>
+         <ul>
+            <script>
+                var i = 0;
+                while( i < coworkers.length){
+                    document.write('<li>' + coworkers[i] + '</li>');
+                    i = i + 1;
+                }
+            </script>
+         </ul>
+         
+    </body>
+</html>
