@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Object</h1>
+        <h2>Create</h2>
+        <script>
+            var coworkers = {
+                "CEO": "jeong",
+                "COO": "kim"
+            };
+            document.write("CEO: " + coworkers.CEO + "<br>");
+            document.write("COO: " + coworkers.COO + "<br>");
+    
+            coworkers.dev = "hee"; // 새로운 속성 추가
+            coworkers["data scientist"] = "ji"; // 띄어쓰기 있는 속성 추가
+    
+            document.write("Developer: " + coworkers.dev + "<br>");
+            document.write("Data Scientist: " + coworkers["data scientist"] + "<br>");
+        </script>
+        <h2>Iterate</h2>
+        <script>
+            for(var key in coworkers) {
+                document.write(key+"<br>")
+            }
+        </script>
+        <br>
+        <script>
+            
+            for(var key in coworkers) {
+                document.write(key + " : " + coworkers[key]+"<br>")
+            }
+        </script>
+        <h2> Property & Method </h2>
+        <script>
+            coworkers.showAll = function(){
+                for(var key in this) {
+                document.write(key + " : " + this[key]+"<br>")
+            }
+            }
+            coworkers.showAll();
+            /** 아래 두가지 함수정의랑 같은 표현
+            var showAll = fuction(){
+            }
+            fuction showAll( ){
+            }
+            **/
+        </script>
+    </body>
+</html>
